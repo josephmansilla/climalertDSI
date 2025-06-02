@@ -1,6 +1,6 @@
 package ar.utn.ba.ddsi.mailing.services.impl;
 
-import ar.utn.ba.ddsi.mailing.models.entities.Email;
+import ar.utn.ba.ddsi.mailing.models.entities.notificacion.Email;
 import ar.utn.ba.ddsi.mailing.models.repositories.IEmailRepository;
 import ar.utn.ba.ddsi.mailing.services.IEmailService;
 import org.slf4j.Logger;

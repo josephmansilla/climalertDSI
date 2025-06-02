@@ -1,7 +1,7 @@
 package ar.utn.ba.ddsi.mailing.services.impl;
 
 import ar.utn.ba.ddsi.mailing.models.entities.Clima;
-import ar.utn.ba.ddsi.mailing.models.entities.Email;
+import ar.utn.ba.ddsi.mailing.models.entities.notificacion.Email;
 import ar.utn.ba.ddsi.mailing.models.repositories.IClimaRepository;
 import ar.utn.ba.ddsi.mailing.services.IAlertasService;
 import org.slf4j.Logger;
