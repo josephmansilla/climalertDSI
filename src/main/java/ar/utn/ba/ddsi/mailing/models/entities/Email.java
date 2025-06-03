@@ -8,7 +8,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class Email implements INotificationAdapter {
+public class Email {
     private Long id;
     private String destinatario;
     private String remitente;
