@@ -1,18 +1,24 @@
-package ar.utn.ba.ddsi.mailing.models.entities.alerta;
+package ar.utn.ba.ddsi.mailing.models.entities.condicionesAlerta.impl;
 
 import ar.utn.ba.ddsi.mailing.models.entities.Clima;
+import ar.utn.ba.ddsi.mailing.models.entities.condicionesAlerta.ICondicionAlerta;
+import org.springframework.stereotype.Component;
 
-public class AlertaTempHum implements IAlerta {
+@Component
+public class CondicionTempHum implements ICondicionAlerta {
   private final Integer temperaturaLimiteEnCelsius;
   private final Integer temperaturaLimiteEnFahrenheit;
   private final Double humedadLimite;
+  private final String asunto;
 
-  public AlertaTempHum() {
+
+  public CondicionTempHum() {
     temperaturaLimiteEnCelsius = 35;
     temperaturaLimiteEnFahrenheit = 95;
     humedadLimite = 0.6;
+    asunto = "Alerta de Clima - Condiciones Extremas";
   }
-
+  @Override
   public Boolean seCumpleAlerta(Clima clima) {
     return
         clima.getHumedad() >= humedadLimite &&

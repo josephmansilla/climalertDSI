@@ -1,6 +1,6 @@
 package ar.utn.ba.ddsi.mailing.services.impl;
 
-import ar.utn.ba.ddsi.mailing.models.entities.notificacion.Email;
+import ar.utn.ba.ddsi.mailing.models.entities.Email;
 import ar.utn.ba.ddsi.mailing.models.repositories.IEmailRepository;
 import ar.utn.ba.ddsi.mailing.services.IEmailService;
 import org.slf4j.Logger;
@@ -34,7 +34,7 @@ public class EmailService implements IEmailService {
     public void procesarPendientes() {
         List<Email> pendientes = emailRepository.findByEnviado(false);
         for (Email email : pendientes) {
-            email.enviar();
+            email.enviar(email);
             email.setEnviado(true);
             emailRepository.save(email);
         }

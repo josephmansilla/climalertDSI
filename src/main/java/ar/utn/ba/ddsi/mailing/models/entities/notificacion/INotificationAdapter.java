@@ -1,5 +1,7 @@
 package ar.utn.ba.ddsi.mailing.models.entities.notificacion;
 
-public interface INotificacion {
+import ar.utn.ba.ddsi.mailing.models.entities.Email;
+
+public interface INotificationAdapter {
   public void enviar(Email email);
 }

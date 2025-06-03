@@ -1,6 +1,6 @@
 package ar.utn.ba.ddsi.mailing.controllers;
 
-import ar.utn.ba.ddsi.mailing.models.entities.notificacion.Email;
+import ar.utn.ba.ddsi.mailing.models.entities.Email;
 import ar.utn.ba.ddsi.mailing.services.IEmailService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

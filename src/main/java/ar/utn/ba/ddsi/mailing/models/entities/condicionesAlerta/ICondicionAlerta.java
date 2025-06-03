@@ -1,10 +1,10 @@
-package ar.utn.ba.ddsi.mailing.models.entities.alerta;
+package ar.utn.ba.ddsi.mailing.models.entities.condicionesAlerta;
 
 import ar.utn.ba.ddsi.mailing.models.entities.Clima;
 import java.sql.Timestamp;
 import lombok.Getter;
 
-public interface IAlerta {
+public interface ICondicionAlerta {
   @Getter
   Timestamp fechaActualizacion = new Timestamp(System.currentTimeMillis());
   public Boolean seCumpleAlerta(Clima clima);
