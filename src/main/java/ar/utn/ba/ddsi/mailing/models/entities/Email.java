@@ -18,7 +18,6 @@ public class Email implements INotificationAdapter {
 
     private Timestamp fechaEnviado;
     private INotificationAdapter notificacionAdapter;
-    private Alerta alerta;
 
     public Email(String destinatario, String remitente, String asunto, String contenido) {
         this.destinatario = destinatario;
@@ -26,17 +25,15 @@ public class Email implements INotificationAdapter {
         this.asunto = asunto;
         this.contenido = contenido;
         this.notificacionAdapter = notificacionAdapter;
-        this.alerta = alerta;
         this.enviado = false;
     }
 
-    public Email(String destinatario, String remitente, String asunto, String contenido, INotificationAdapter notificacionAdapter, Alerta alerta) {
+    public Email(String destinatario, String remitente, String asunto, String contenido, INotificationAdapter notificacionAdapter) {
         this.destinatario = destinatario;
         this.remitente = remitente;
         this.asunto = asunto;
         this.contenido = contenido;
         this.notificacionAdapter = notificacionAdapter;
-        this.alerta = alerta;
         this.enviado = false;
     }
 

@@ -5,7 +5,5 @@ import java.sql.Timestamp;
 import lombok.Getter;
 
 public interface ICondicionAlerta {
-  @Getter
-  Timestamp fechaActualizacion = new Timestamp(System.currentTimeMillis());
   public Boolean seCumpleAlerta(Clima clima);
 }

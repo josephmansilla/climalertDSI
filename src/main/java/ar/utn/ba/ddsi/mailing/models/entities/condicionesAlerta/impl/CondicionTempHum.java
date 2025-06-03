@@ -9,7 +9,7 @@ public class CondicionTempHum implements ICondicionAlerta {
   private final Integer temperaturaLimiteEnCelsius;
   private final Integer temperaturaLimiteEnFahrenheit;
   private final Double humedadLimite;
-  private final String asunto;
+  public final String asunto;
 
 
   public CondicionTempHum() {
@@ -18,6 +18,7 @@ public class CondicionTempHum implements ICondicionAlerta {
     humedadLimite = 0.6;
     asunto = "Alerta de Clima - Condiciones Extremas";
   }
+
   @Override
   public Boolean seCumpleAlerta(Clima clima) {
     return
